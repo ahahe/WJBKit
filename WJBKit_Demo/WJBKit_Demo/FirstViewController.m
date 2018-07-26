@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "NSMutableAttributedString+Chain.h"
 
 @interface FirstViewController ()
 
