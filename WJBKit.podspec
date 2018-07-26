@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary      = "Hello WJBKit."
   s.homepage     = "https://github.com/ahahe/WJBKit"
   s.source       = { :git => "https://github.com/ahahe/WJBKit.git", :tag => "#{s.version}" }
-  s.source_files = "WJBKit"
+  s.source_files = "WJBKit/"
   s.requires_arc = true # 是否启用ARC
   s.platform     = :ios, "7.0" #平台及支持的最低版本
   s.frameworks   = "UIKit", "Foundation" #支持的框架
