@@ -16,9 +16,7 @@
 		7FF01E7A21096737002E0459 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF01E7921096737002E0459 /* main.m */; };
 		7FF01E8421096737002E0459 /* WJBKit_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF01E8321096737002E0459 /* WJBKit_DemoTests.m */; };
 		7FF01E8F21096737002E0459 /* WJBKit_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF01E8E21096737002E0459 /* WJBKit_DemoUITests.m */; };
-		7FF01EA121096963002E0459 /* NSMutableAttributedString+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF01EA021096963002E0459 /* NSMutableAttributedString+Chain.m */; };
-		7FF01EA321096990002E0459 /* NSMutableAttributedString+Chain.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF01E9F21096963002E0459 /* NSMutableAttributedString+Chain.h */; };
-		7FF01EA421096990002E0459 /* NSMutableAttributedString+Chain.m in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF01EA021096963002E0459 /* NSMutableAttributedString+Chain.m */; };
+		7FF01EA821096EDA002E0459 /* NSMutableAttributedString+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF01EA721096EDA002E0459 /* NSMutableAttributedString+Chain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +55,8 @@
 		7FF01E8A21096737002E0459 /* WJBKit_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJBKit_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF01E8E21096737002E0459 /* WJBKit_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJBKit_DemoUITests.m; sourceTree = "<group>"; };
 		7FF01E9021096737002E0459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FF01E9F21096963002E0459 /* NSMutableAttributedString+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Chain.h"; sourceTree = "<group>"; };
-		7FF01EA021096963002E0459 /* NSMutableAttributedString+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Chain.m"; sourceTree = "<group>"; };
+		7FF01EA621096EDA002E0459 /* NSMutableAttributedString+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Chain.h"; sourceTree = "<group>"; };
+		7FF01EA721096EDA002E0459 /* NSMutableAttributedString+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Chain.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF01EA321096990002E0459 /* NSMutableAttributedString+Chain.h in Frameworks */,
-				7FF01EA421096990002E0459 /* NSMutableAttributedString+Chain.m in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +87,7 @@
 		7FF01E5B21096736002E0459 = {
 			isa = PBXGroup;
 			children = (
-				7FF01E9C21096963002E0459 /* WJBKit */,
+				7FF01EA521096EDA002E0459 /* WJBKit */,
 				7FF01E6621096736002E0459 /* WJBKit_Demo */,
 				7FF01E8221096737002E0459 /* WJBKit_DemoTests */,
 				7FF01E8D21096737002E0459 /* WJBKit_DemoUITests */,
@@ -146,37 +142,21 @@
 			path = WJBKit_DemoUITests;
 			sourceTree = "<group>";
 		};
-		7FF01E9C21096963002E0459 /* WJBKit */ = {
-			isa = PBXGroup;
-			children = (
-				7FF01E9D21096963002E0459 /* Foundation */,
-			);
-			name = WJBKit;
-			path = ../WJBKit;
-			sourceTree = "<group>";
-		};
-		7FF01E9D21096963002E0459 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				7FF01E9E21096963002E0459 /* NSAttributedString */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		7FF01E9E21096963002E0459 /* NSAttributedString */ = {
-			isa = PBXGroup;
-			children = (
-				7FF01E9F21096963002E0459 /* NSMutableAttributedString+Chain.h */,
-				7FF01EA021096963002E0459 /* NSMutableAttributedString+Chain.m */,
-			);
-			path = NSAttributedString;
-			sourceTree = "<group>";
-		};
 		7FF01EA221096990002E0459 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FF01EA521096EDA002E0459 /* WJBKit */ = {
+			isa = PBXGroup;
+			children = (
+				7FF01EA621096EDA002E0459 /* NSMutableAttributedString+Chain.h */,
+				7FF01EA721096EDA002E0459 /* NSMutableAttributedString+Chain.m */,
+			);
+			name = WJBKit;
+			path = ../WJBKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF01E6F21096736002E0459 /* SecondViewController.m in Sources */,
-				7FF01EA121096963002E0459 /* NSMutableAttributedString+Chain.m in Sources */,
+				7FF01EA821096EDA002E0459 /* NSMutableAttributedString+Chain.m in Sources */,
 				7FF01E6921096736002E0459 /* AppDelegate.m in Sources */,
 				7FF01E7A21096737002E0459 /* main.m in Sources */,
 				7FF01E6C21096736002E0459 /* FirstViewController.m in Sources */,
